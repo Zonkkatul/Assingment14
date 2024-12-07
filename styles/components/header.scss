@@ -1,0 +1,103 @@
+header {
+    display: grid;
+    grid-template-rows: 20% 35% 25% auto;
+    grid-template-columns: 1fr;
+    height: 821px;
+    background: url("../images/headerimg.png") center/cover no-repeat;
+    color: white;
+    text-align: center;
+  
+    .hero-content {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        color: #fff;
+      
+        h1 {
+          font-size: 48px;
+          font-family: 'Josefin Sans', sans-serif;
+          letter-spacing: 2px;
+          margin: 0;
+          align-self: end;
+          transform: translateY(200px); 
+        }
+      
+        p {
+          font-size: 22px;
+          font-family: 'Josefin Sans', regular;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.8);
+          margin: 10px 0;
+          letter-spacing: 6.8px;
+          align-self: end; 
+          transform: translateY(170px); 
+        }
+      }
+      
+    .search-bar {
+      grid-row: 3; 
+      justify-self: center; 
+      align-self: start; 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      max-width: 450px;
+      height: 55px;
+      background-color: #fff;
+      padding: 0 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(84, 116, 253, 1);
+  
+      input {
+        flex: 1;
+        border: none;
+        outline: none;
+        text-align: center;
+        font-size: 14px;
+        color: #999999;
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 0;
+      }
+  
+      button {
+        padding: 8px 20px;
+        font-size: 14px;
+        color: #fff;
+        background-color: rgba(84, 116, 253, 1);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #6577ff;
+        }
+      }
+    }
+  
+    .scroll-down {
+      grid-row: 4; 
+      justify-self: center; 
+      align-self: start; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 108px;
+      height: 46px;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      transition: color 0.3s;
+  
+      img {
+        width: 100%; 
+        height: auto;
+      }
+  
+      &:hover {
+        color: #6577ff;
+      }
+    }
+  }
