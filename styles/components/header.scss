@@ -34,34 +34,41 @@ header {
         }
       }
       
-    .search-bar {
-      grid-row: 3; 
-      justify-self: center; 
-      align-self: start; 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 90%;
-      max-width: 450px;
-      height: 55px;
-      background-color: #fff;
-      padding: 0 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      border: 1px solid rgba(84, 116, 253, 1);
-  
-      input {
+
+
+
+
+     /* The search bar will not be functional until a valid input is entered. 
+   The button will remain inactive (gray) and unclickable until the input is valid.
+   ^^ Mb I misunderstood this part: "The form should have validations." */
+
+      .search-bar {
+        grid-row: 3; 
+        justify-self: center; 
+        align-self: start; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 450px;
+        height: 55px;
+        background-color: #fff;
+        padding: 0 20px;
+        border-radius: 5px;
+        border: 1px solid rgba(84, 116, 253, 1);
+      }
+      
+      .search-bar input {
         flex: 1;
         border: none;
         outline: none;
         text-align: center;
         font-size: 14px;
-        color: #999999;
+        color: #999;
         font-family: 'Josefin Sans', sans-serif;
-        padding: 0;
       }
-  
-      button {
+      
+      .search-bar button {
         padding: 8px 20px;
         font-size: 14px;
         color: #fff;
@@ -70,13 +77,29 @@ header {
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
-  
-        &:hover {
-          background-color: #6577ff;
-        }
       }
-    }
-  
+      
+      .search-bar button:hover {
+        background-color: #6577ff;
+      }
+      
+      .search-bar input:valid {
+        border-bottom: 2px solid green;
+      }
+      
+      .search-bar input:invalid {
+        border-bottom: 2px solid red;
+      }
+      
+      .search-bar input:focus {
+        border-bottom: 2px solid #5473ff;
+      }
+      
+      .search-bar input:invalid + button {
+        background-color: #aaa;
+        cursor: not-allowed;
+      }
+      
     .scroll-down {
       grid-row: 4; 
       justify-self: center; 

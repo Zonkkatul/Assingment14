@@ -28,3 +28,152 @@ body {
     margin: 0 auto;
     background: #fff;
 }
+
+@media (max-width: 768px) {
+    .header .hero-content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .whychooseus {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .whychooseus .images {
+        position: relative;
+        top: 0;
+        right: 0;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .sub-section, .sub-section1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .testimonial-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .testimonial-content .img-testimonial {
+        width: 100%;
+        height: auto;
+    }
+
+    .how-it-works {
+        min-height: 500px;  
+    }
+
+    .how-it-works .content {
+        flex-direction: column;  
+        justify-content: center;  
+        padding: 10px;  
+    }
+
+    .how-it-works .step {
+        margin: 10px 0; 
+    }
+
+    .how-it-works .step .icon {
+        width: 60px;  
+        height: 60px;
+    }
+
+    .how-it-works .step p {
+        font-size: 14px;  
+    }
+}
+
+@media (max-width: 480px) {
+    .header .hero-content {
+        padding: 15px;
+    }
+
+    .whychooseus {
+        padding: 15px;
+    }
+
+    .whychooseus .images {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .sub-section, .sub-section1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .testimonial-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .testimonial-content .img-testimonial {
+        width: 100%;
+        height: auto;
+    }
+    .how-it-works .step .icon {
+        width: 50px;  
+        height: 50px;
+    }
+
+    .how-it-works .step p {
+        font-size: 12px;  
+        letter-spacing: 1.2px; 
+    }
+}
+    .button {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+@media (max-width: 320px) {
+    .header .search-bar {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .whychooseus {
+        padding: 10px;
+    }
+
+    .whychooseus-text, .whychooseus p {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .spaincontainer, .spaincontainer1 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .howitworks .step {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .howitworks .step img {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 8px;
+    }
+
+    .howitworks .step p {
+        font-size: 14px;
+    }
+}
+

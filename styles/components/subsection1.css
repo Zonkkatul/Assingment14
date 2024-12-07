@@ -96,6 +96,22 @@
           justify-content: center;
   cursor: pointer;
   border: none;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(84, 116, 253, 0.8);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.button:focus {
+  outline: 3px solid rgba(84, 116, 253, 0.6);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .button button {
@@ -106,4 +122,15 @@
   background: none;
   border: none;
   letter-spacing: 1.2px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.button button:hover {
+  color: rgb(84, 116, 253);
+}
+
+.button button:focus {
+  outline: 3px solid rgba(84, 116, 253, 0.6);
+  color: rgb(84, 116, 253);
 }

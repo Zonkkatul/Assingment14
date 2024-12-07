@@ -47,6 +47,19 @@
   cursor: pointer;
 }
 
+
+.whychooseus .button:hover {
+  background-color: rgba(84, 116, 253, 0.8); 
+  transform: translateY(-3px); 
+}
+
+
+.whychooseus .button:focus {
+  outline: 3px solid rgba(84, 116, 253, 0.6); 
+  transform: translateY(-3px); 
+}
+
+
 .whychooseus .button button {
   width: auto; 
   height: auto; 

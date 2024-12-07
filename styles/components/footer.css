@@ -36,4 +36,17 @@ footer .menu a {
   color: white;
   text-decoration: none;
   font-size: 14px;
+  -webkit-transition: color 0.3s ease, border-bottom 0.3s ease;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+footer .menu a:hover,
+footer .menu a:focus {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid white;
+  outline: none;
+}
+
+footer .menu a:focus {
+  outline: 2px solid rgba(84, 116, 253, 0.9);
 }

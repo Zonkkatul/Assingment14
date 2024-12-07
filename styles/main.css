@@ -37,6 +37,19 @@ footer .menu a {
   color: white;
   text-decoration: none;
   font-size: 14px;
+  -webkit-transition: color 0.3s ease, border-bottom 0.3s ease;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+footer .menu a:hover,
+footer .menu a:focus {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid white;
+  outline: none;
+}
+
+footer .menu a:focus {
+  outline: 2px solid rgba(84, 116, 253, 0.9);
 }
 
 header {
@@ -50,6 +63,9 @@ header {
   background: url("../../images/headerimg.png") center/cover no-repeat;
   color: white;
   text-align: center;
+  /* The search bar will not be functional until a valid input is entered. 
+  The button will remain inactive (gray) and unclickable until the input is valid.
+  ^^ Mb I misunderstood this part: "The form should have validations." */
 }
 
 header > *:nth-child(1) {
@@ -124,8 +140,6 @@ header .search-bar {
   background-color: #fff;
   padding: 0 20px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid rgb(84, 116, 253);
 }
 header .search-bar input {
@@ -136,9 +150,8 @@ header .search-bar input {
   outline: none;
   text-align: center;
   font-size: 14px;
-  color: #999999;
+  color: #999;
   font-family: "Josefin Sans", sans-serif;
-  padding: 0;
 }
 header .search-bar button {
   padding: 8px 20px;
@@ -153,6 +166,19 @@ header .search-bar button {
 }
 header .search-bar button:hover {
   background-color: #6577ff;
+}
+header .search-bar input:valid {
+  border-bottom: 2px solid green;
+}
+header .search-bar input:invalid {
+  border-bottom: 2px solid red;
+}
+header .search-bar input:focus {
+  border-bottom: 2px solid #5473ff;
+}
+header .search-bar input:invalid + button {
+  background-color: #aaa;
+  cursor: not-allowed;
 }
 header .scroll-down {
   -ms-grid-row: 4;
@@ -274,19 +300,58 @@ header .scroll-down:hover {
   margin-bottom: 10px;
 }
 
-.social-section .social-icons {
+.social-section .social-media-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 166px;
+  height: 16px;
+  gap: 3px;
+}
+
+.social-section .social-media-icons a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
-.social-section .social-icons a img {
-  width: 20px;
-  height: 20px;
+.social-section .social-media-icons a img {
+  width: 18px;
+  height: 13px;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.social-section .social-media-icons a:hover img,
+.social-section .social-media-icons a:focus img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.social-section .social-media-icons a:focus {
+  outline: 2px solid rgb(84, 116, 253);
+}
+
+.social-section .social-media-icons a:hover {
+  cursor: pointer;
 }
 
 .sub-section {
@@ -498,6 +563,22 @@ header .scroll-down:hover {
           justify-content: center;
   cursor: pointer;
   border: none;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(84, 116, 253, 0.8);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.button:focus {
+  outline: 3px solid rgba(84, 116, 253, 0.6);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .button button {
@@ -508,6 +589,17 @@ header .scroll-down:hover {
   background: none;
   border: none;
   letter-spacing: 1.2px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.button button:hover {
+  color: rgb(84, 116, 253);
+}
+
+.button button:focus {
+  outline: 3px solid rgba(84, 116, 253, 0.6);
+  color: rgb(84, 116, 253);
 }
 
 .testimonial {
@@ -529,13 +621,13 @@ header .scroll-down:hover {
   padding: 20px;
   color: #fff;
   text-align: center;
-  gap: 20px; /* Space between heading and content */
+  gap: 20px;
 }
 
 .testimonial h2 {
   font-size: 36px;
   font-family: "Aleo", serif;
-  margin-bottom: 30px; /* Ensure spacing below the heading */
+  margin-bottom: 30px;
 }
 
 .testimonial-content {
@@ -584,7 +676,7 @@ header .scroll-down:hover {
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
-  margin-bottom: 10px; /* Space between name and description */
+  margin-bottom: 10px;
 }
 
 .testimonial-content .text-container .description {
@@ -1209,6 +1301,18 @@ header .scroll-down:hover {
   cursor: pointer;
 }
 
+.whychooseus .button:hover {
+  background-color: rgba(84, 116, 253, 0.8);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.whychooseus .button:focus {
+  outline: 3px solid rgba(84, 116, 253, 0.6);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
 .whychooseus .button button {
   width: auto;
   height: auto;
@@ -1279,4 +1383,178 @@ body {
 .container > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+}
+
+@media (max-width: 768px) {
+  .header .hero-content {
+    text-align: center;
+    padding: 20px;
+  }
+  .whychooseus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .whychooseus .images {
+    position: relative;
+    top: 0;
+    right: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+  .sub-section, .sub-section1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .testimonial-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .testimonial-content .img-testimonial {
+    width: 100%;
+    height: auto;
+  }
+  .howitworks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .howitworks .step {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .howitworks .step img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .howitworks .step p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .header .hero-content {
+    padding: 15px;
+  }
+  .whychooseus {
+    padding: 15px;
+  }
+  .whychooseus .images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+  }
+  .sub-section, .sub-section1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .testimonial-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .testimonial-content .img-testimonial {
+    width: 100%;
+    height: auto;
+  }
+  .howitworks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px;
+  }
+  .howitworks .step {
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+  }
+  .howitworks .step img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  .howitworks .step p {
+    font-size: 14px;
+  }
+  .button {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .header .search-bar {
+    width: 90%;
+    padding: 5px;
+  }
+  .whychooseus {
+    padding: 10px;
+  }
+  .whychooseus-text, .whychooseus p {
+    font-size: 14px;
+  }
+  .button {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .spaincontainer, .spaincontainer1 {
+    width: 100%;
+    padding: 10px;
+  }
+  .howitworks .step {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .howitworks .step img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  .howitworks .step p {
+    font-size: 14px;
+  }
 }

@@ -9,6 +9,9 @@ header {
   background: url("../../images/headerimg.png") center/cover no-repeat;
   color: white;
   text-align: center;
+  /* The search bar will not be functional until a valid input is entered. 
+  The button will remain inactive (gray) and unclickable until the input is valid.
+  ^^ Mb I misunderstood this part: "The form should have validations." */
 }header > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -75,8 +78,6 @@ header .search-bar {
   background-color: #fff;
   padding: 0 20px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid rgb(84, 116, 253);
 }
 header .search-bar input {
@@ -87,9 +88,8 @@ header .search-bar input {
   outline: none;
   text-align: center;
   font-size: 14px;
-  color: #999999;
+  color: #999;
   font-family: "Josefin Sans", sans-serif;
-  padding: 0;
 }
 header .search-bar button {
   padding: 8px 20px;
@@ -104,6 +104,19 @@ header .search-bar button {
 }
 header .search-bar button:hover {
   background-color: #6577ff;
+}
+header .search-bar input:valid {
+  border-bottom: 2px solid green;
+}
+header .search-bar input:invalid {
+  border-bottom: 2px solid red;
+}
+header .search-bar input:focus {
+  border-bottom: 2px solid #5473ff;
+}
+header .search-bar input:invalid + button {
+  background-color: #aaa;
+  cursor: not-allowed;
 }
 header .scroll-down {
   -ms-grid-row: 4;

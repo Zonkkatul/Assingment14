@@ -17,13 +17,13 @@
   padding: 20px;
   color: #fff;
   text-align: center;
-  gap: 20px; /* Space between heading and content */
+  gap: 20px;
 }
 
 .testimonial h2 {
   font-size: 36px;
   font-family: "Aleo", serif;
-  margin-bottom: 30px; /* Ensure spacing below the heading */
+  margin-bottom: 30px;
 }
 
 .testimonial-content {
@@ -72,7 +72,7 @@
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
-  margin-bottom: 10px; /* Space between name and description */
+  margin-bottom: 10px;
 }
 
 .testimonial-content .text-container .description {
