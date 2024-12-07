@@ -13,7 +13,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: url("../../images/lastsection1.png") center/cover no-repeat;
-  height: 731px;
+  height: auto;
   padding: 20px;
   color: #fff;
   text-align: center;
