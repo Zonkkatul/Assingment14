@@ -1,0 +1,101 @@
+.whychooseus {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat(9, 1fr); 
+    gap: 8px; 
+    background: url("../images/whychooseusimg.png") center/cover no-repeat;
+    height: 685px;
+    color: #fff;
+    padding: 20px; 
+  
+  .whychooseus .content {
+    grid-column: span 4 / span 4; 
+    grid-row: span 4 / span 4; 
+    grid-column-start: 2; 
+    grid-row-start: 3; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+  }
+  
+  .whychooseus-text {
+    font-size: 36px;
+    font-family: 'Aleo', serif;
+    margin-bottom: 20px;
+    line-height: 26px;
+  }
+  
+  .whychooseus p {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.6px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    max-width: 560px;
+  }
+  
+  .whychooseus .button {
+    background-color: rgba(84, 116, 253, 1);
+    height: 63px;
+    width: 228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Aleo', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1.2px;
+  }
+  
+  .whychooseus .button button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+  
+  .whychooseus .images .div2 {
+    grid-column: span 2 / span 2; /* Spans 2 columns */
+    grid-row: span 2 / span 2; /* Spans 2 rows */
+    grid-column-start: 7; /* Starts at column 7 */
+    grid-row-start: 2; /* Starts at row 2 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .whychooseus .images .div2 img {
+    width: 100%; /* Responsive width */
+    height: 100%; /* Responsive height */
+    object-fit: cover; /* Ensures the image fits nicely */
+    transform: translateX(-60px);
+  }
+  
+  .whychooseus .images1 .div3 {
+    grid-column: span 2 / span 2; /* Spans 2 columns */
+    grid-row: span 2 / span 2; /* Spans 2 rows */
+    grid-column-start: 8; /* Starts at column 8 */
+    grid-row-start: 4; /* Starts at row 4 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .whychooseus .images1 .div3 img {
+    width: 100%; /* Responsive width */
+    height: 100%; /* Responsive height */
+    object-fit: cover; /* Ensures the image fits nicely */
+  }
+  
