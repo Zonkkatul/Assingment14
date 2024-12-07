@@ -1,4 +1,44 @@
 @import '../styles/reset.css';
+footer {
+  position: relative;
+  width: 100%;
+  background-color: rgb(84, 116, 253);
+  padding: 20px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logo {
+  font-size: 24px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  color: white;
+}
+
+footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-family: "Aleo", regular;
+  margin-right: 20px;
+}
+
+footer .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
 header {
   display: -ms-grid;
   display: grid;
@@ -11,18 +51,22 @@ header {
   color: white;
   text-align: center;
 }
+
 header > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
+
 header > *:nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
+
 header > *:nth-child(3) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
+
 header > *:nth-child(4) {
   -ms-grid-row: 4;
   -ms-grid-column: 1;

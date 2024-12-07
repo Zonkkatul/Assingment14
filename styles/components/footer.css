@@ -1,0 +1,39 @@
+footer {
+  position: relative;
+  width: 100%;
+  background-color: rgb(84, 116, 253);
+  padding: 20px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logo {
+  font-size: 24px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  color: white;
+}
+
+footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-family: "Aleo", regular;
+  margin-right: 20px;
+}
+
+footer .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
