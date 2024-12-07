@@ -1,0 +1,79 @@
+.sub-section1 {
+    width: 100%;
+    height: 700px;
+    background-image: url("../../images/sectiondeniz.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-section1 .content {
+    width: 100%;
+    max-width: 1770px;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    padding-left: 50px; 
+}
+
+.subsection1frame {
+    background-color: rgba(35, 35, 35, 0.90);
+    height: 374px;
+    width: 543px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px; 
+}
+
+
+
+.spain {
+    color: #e8e8e8;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.grandspainmadrid {
+    color: #ffffff;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.spain-text {
+    color: #e8e8e8;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.button {
+    background-color:rgba(84, 116, 253, 1);
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+.button button {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    background: none;
+    border: none;
+    letter-spacing: 1.2px;
+}
