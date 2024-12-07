@@ -6,7 +6,7 @@ header {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   height: 821px;
-  background: url("../images/headerimg.png") center/cover no-repeat;
+  background: url("../../images/headerimg.png") center/cover no-repeat;
   color: white;
   text-align: center;
 }header > *:nth-child(1) {

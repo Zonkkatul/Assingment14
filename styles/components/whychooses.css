@@ -6,10 +6,10 @@
   -ms-grid-rows: 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr;
   grid-template-rows: repeat(9, 1fr);
   gap: 8px;
-  background: url("../images/whychooseusimg.png") center/cover no-repeat;
+  background: url("../../images/whychooseusimg.png") center/cover no-repeat;
   height: 685px;
   color: #fff;
-  padding: 20px; /* Adjust padding as needed */
+  padding: 20px;
 }.whychooseus > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -284,13 +284,13 @@
 
 .whychooseus .content {
   -ms-grid-column-span: 4;
-  grid-column: span 4/span 4; /* Spans 4 columns */
+  grid-column: span 4/span 4;
   -ms-grid-row-span: 4;
-  grid-row: span 4/span 4; /* Spans 4 rows */
+  grid-row: span 4/span 4;
   -ms-grid-column: 2;
-      grid-column-start: 2; /* Starts at column 2 */
+      grid-column-start: 2;
   -ms-grid-row: 3;
-      grid-row-start: 3; /* Starts at row 3 */
+      grid-row-start: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,13 +303,14 @@
           align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; /* Centers the text vertically */
+          justify-content: center;
 }
 
 .whychooseus-text {
   font-size: 36px;
   font-family: "Aleo", serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  line-height: 26px;
 }
 
 .whychooseus p {
@@ -322,6 +323,14 @@
 }
 
 .whychooseus .button {
+  -ms-grid-column-span: 2;
+  grid-column: span 2/span 2; /* Aligns button within grid */
+  -ms-grid-row-span: 1;
+  grid-row: span 1/span 1; /* Button spans 1 row */
+  -ms-grid-column: 6;
+      grid-column-start: 6; /* Starts at column 6 */
+  -ms-grid-row: 6;
+      grid-row-start: 6; /* Positioned within row 6 */
   background-color: rgb(84, 116, 253);
   height: 63px;
   width: 228px;
@@ -334,13 +343,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  font-family: "Aleo", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
   cursor: pointer;
-  border: none;
-  letter-spacing: 1.2px;
 }
 
 .whychooseus .button button {
@@ -348,7 +351,6 @@
   height: 100%;
   color: #fff;
   font-size: 16px;
-  letter-spacing: 1.2px;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -356,13 +358,13 @@
 
 .whychooseus .images .div2 {
   -ms-grid-column-span: 2;
-  grid-column: span 2/span 2; /* Spans 2 columns */
+  grid-column: span 2/span 2;
   -ms-grid-row-span: 2;
-  grid-row: span 2/span 2; /* Spans 2 rows */
+  grid-row: span 2/span 2;
   -ms-grid-column: 7;
-      grid-column-start: 7; /* Starts at column 7 */
+      grid-column-start: 7;
   -ms-grid-row: 2;
-      grid-row-start: 2; /* Starts at row 2 */
+      grid-row-start: 2;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -371,23 +373,23 @@
 }
 
 .whychooseus .images .div2 img {
-  width: 100%; /* Responsive width */
-  height: 100%; /* Responsive height */
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* Ensures the image fits nicely */
+     object-fit: cover;
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
 }
 
 .whychooseus .images1 .div3 {
   -ms-grid-column-span: 2;
-  grid-column: span 2/span 2; /* Spans 2 columns */
+  grid-column: span 2/span 2;
   -ms-grid-row-span: 2;
-  grid-row: span 2/span 2; /* Spans 2 rows */
+  grid-row: span 2/span 2;
   -ms-grid-column: 8;
-      grid-column-start: 8; /* Starts at column 8 */
+      grid-column-start: 8;
   -ms-grid-row: 4;
-      grid-row-start: 4; /* Starts at row 4 */
+      grid-row-start: 4;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -396,8 +398,8 @@
 }
 
 .whychooseus .images1 .div3 img {
-  width: 100%; /* Responsive width */
-  height: 100%; /* Responsive height */
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* Ensures the image fits nicely */
+     object-fit: cover;
 }

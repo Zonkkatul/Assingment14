@@ -47,7 +47,7 @@ header {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   height: 821px;
-  background: url("../images/headerimg.png") center/cover no-repeat;
+  background: url("../../images/headerimg.png") center/cover no-repeat;
   color: white;
   text-align: center;
 }
@@ -186,83 +186,40 @@ header .scroll-down:hover {
   color: #6577ff;
 }
 
-.whychooseus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+.how-it-works {
+  background-image: url("../../images/Rectangle 9.png");
+  width: 100%;
+  height: 340px;
+  padding: 0;
+  margin: 0;
   position: relative;
-  background: url("../images/whychooseusimg.png") center/cover no-repeat;
-  height: 685px;
-  color: #fff;
-  padding: 50px 330px;
-}
-
-.whychooseus .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.whychooseus-text {
-  font-size: 36px;
-  font-family: "Aleo", serif;
-  margin-bottom: 10px;
-}
-
-.whychooseus p {
-  font-size: 16px;
-  font-family: "Josefin Sans", sans-serif;
-  letter-spacing: 1.6px;
-  line-height: 26px;
-  margin-bottom: 20px;
-  max-width: 560px;
-}
-
-.whychooseus .button {
-  background-color: rgb(84, 116, 253);
-  height: 63px;
-  width: 228px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.whychooseus .button:hover {
-  background-color: #6f42c1;
+.how-it-works .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 90%;
+  max-width: 1773px;
 }
 
-.whychooseus .images {
+.how-it-works .step {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,15 +227,115 @@ header .scroll-down:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  top: 200px;
-  right: 330px;
-  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 20px;
 }
 
-.whychooseus .images .image {
-  width: 350px;
-  height: 220px;
+.how-it-works .step .icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.how-it-works .step p {
+  color: #E8E8E8;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.6px;
+}
+
+.sub-section {
+  width: 100%;
+  height: 700px;
+  background-image: url("../../images/sectionhavuz.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub-section .content {
+  position: relative;
+  width: 100%;
+  max-width: 1770px;
+  height: 100%;
+}
+
+.rectangle415 {
+  background-color: #232323;
+  height: 374px;
+  width: 543px;
+  position: absolute;
+  left: 328px;
+  top: 227px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.spain {
+  color: #e8e8e8;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.grandspainmadrid {
+  color: #ffffff;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.spain-text {
+  color: #e8e8e8;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: rgb(84, 116, 253);
+  height: 50px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.button button {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .whychooseus {
@@ -289,10 +346,10 @@ header .scroll-down:hover {
   -ms-grid-rows: 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr;
   grid-template-rows: repeat(9, 1fr);
   gap: 8px;
-  background: url("../images/whychooseusimg.png") center/cover no-repeat;
+  background: url("../../images/whychooseusimg.png") center/cover no-repeat;
   height: 685px;
   color: #fff;
-  padding: 20px; /* Adjust padding as needed */
+  padding: 20px;
 }
 
 .whychooseus > *:nth-child(1) {
@@ -747,13 +804,13 @@ header .scroll-down:hover {
 
 .whychooseus .content {
   -ms-grid-column-span: 4;
-  grid-column: span 4/span 4; /* Spans 4 columns */
+  grid-column: span 4/span 4;
   -ms-grid-row-span: 4;
-  grid-row: span 4/span 4; /* Spans 4 rows */
+  grid-row: span 4/span 4;
   -ms-grid-column: 2;
-      grid-column-start: 2; /* Starts at column 2 */
+      grid-column-start: 2;
   -ms-grid-row: 3;
-      grid-row-start: 3; /* Starts at row 3 */
+      grid-row-start: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,13 +823,14 @@ header .scroll-down:hover {
           align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; /* Centers the text vertically */
+          justify-content: center;
 }
 
 .whychooseus-text {
   font-size: 36px;
   font-family: "Aleo", serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  line-height: 26px;
 }
 
 .whychooseus p {
@@ -785,6 +843,14 @@ header .scroll-down:hover {
 }
 
 .whychooseus .button {
+  -ms-grid-column-span: 2;
+  grid-column: span 2/span 2; /* Aligns button within grid */
+  -ms-grid-row-span: 1;
+  grid-row: span 1/span 1; /* Button spans 1 row */
+  -ms-grid-column: 6;
+      grid-column-start: 6; /* Starts at column 6 */
+  -ms-grid-row: 6;
+      grid-row-start: 6; /* Positioned within row 6 */
   background-color: rgb(84, 116, 253);
   height: 63px;
   width: 228px;
@@ -797,13 +863,7 @@ header .scroll-down:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  font-family: "Aleo", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
   cursor: pointer;
-  border: none;
-  letter-spacing: 1.2px;
 }
 
 .whychooseus .button button {
@@ -811,7 +871,6 @@ header .scroll-down:hover {
   height: 100%;
   color: #fff;
   font-size: 16px;
-  letter-spacing: 1.2px;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -819,13 +878,13 @@ header .scroll-down:hover {
 
 .whychooseus .images .div2 {
   -ms-grid-column-span: 2;
-  grid-column: span 2/span 2; /* Spans 2 columns */
+  grid-column: span 2/span 2;
   -ms-grid-row-span: 2;
-  grid-row: span 2/span 2; /* Spans 2 rows */
+  grid-row: span 2/span 2;
   -ms-grid-column: 7;
-      grid-column-start: 7; /* Starts at column 7 */
+      grid-column-start: 7;
   -ms-grid-row: 2;
-      grid-row-start: 2; /* Starts at row 2 */
+      grid-row-start: 2;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -834,23 +893,23 @@ header .scroll-down:hover {
 }
 
 .whychooseus .images .div2 img {
-  width: 100%; /* Responsive width */
-  height: 100%; /* Responsive height */
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* Ensures the image fits nicely */
+     object-fit: cover;
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
 }
 
 .whychooseus .images1 .div3 {
   -ms-grid-column-span: 2;
-  grid-column: span 2/span 2; /* Spans 2 columns */
+  grid-column: span 2/span 2;
   -ms-grid-row-span: 2;
-  grid-row: span 2/span 2; /* Spans 2 rows */
+  grid-row: span 2/span 2;
   -ms-grid-column: 8;
-      grid-column-start: 8; /* Starts at column 8 */
+      grid-column-start: 8;
   -ms-grid-row: 4;
-      grid-row-start: 4; /* Starts at row 4 */
+      grid-row-start: 4;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -859,10 +918,10 @@ header .scroll-down:hover {
 }
 
 .whychooseus .images1 .div3 img {
-  width: 100%; /* Responsive width */
-  height: 100%; /* Responsive height */
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* Ensures the image fits nicely */
+     object-fit: cover;
 }
 
 body {
